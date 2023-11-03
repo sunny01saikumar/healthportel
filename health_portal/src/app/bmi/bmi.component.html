@@ -1,0 +1,99 @@
+<!-- <app-dashboard> -->
+<div class="heading1">
+<div class="container-fluid">
+  <div>
+    <div class="col-md-6">
+      <div class="card" >
+        <div class="card-header heading">
+          <h1 class="text-center">BMI CALCULATOR</h1>
+        </div>
+        <table class="example-full-width" cellspacing="0">
+        <div class="card-body">
+          <form class="example-form" [formGroup]="bmiCal" (onsubmit)="postBMI()">
+            <div class="row mb-3">
+              <div class="col-md-6">
+                <tr><td><mat-form-field class="example-full-width">
+                  <mat-label>Not Required</mat-label>
+                  <input matInput formControlName="id" name="id">
+                </mat-form-field></td>
+              
+                <td><mat-form-field class="example-full-width">
+                  <mat-label>Your Name</mat-label>
+                  <input matInput formControlName="empName" name="empName">
+                </mat-form-field></td></tr>
+              </div>
+            </div>
+
+            <div class="row mb-3">
+              <div class="col-md-6">
+                <tr><td><mat-form-field class="example-full-width">
+                  <mat-label>Age</mat-label>
+                  <input matInput formControlName="age" name="age">
+                </mat-form-field></td>
+              
+                <td><mat-form-field class="example-full-width">
+                  <mat-label>Gender</mat-label>
+                  <input matInput formControlName="gender" name="gender">
+                </mat-form-field></td></tr>
+              </div>
+            </div>
+
+            <div class="row mb-3">
+              <div class="col-md-6">
+                <tr><td><mat-form-field class="example-full-width">
+                  <mat-label>Weight</mat-label>
+                  <input matInput formControlName="weight" name="weight">
+                </mat-form-field></td>
+             
+                <td><mat-form-field class="example-full-width">
+                  <mat-label>Height</mat-label>
+                  <input matInput formControlName="height" name="height">
+                </mat-form-field></td></tr>
+              </div>
+            </div>
+
+            <div class="row mb-3">
+              <div class="col-md-6">
+                <tr><td><mat-form-field class="example-full-width">
+                  <mat-label>Password</mat-label>
+                  <input matInput formControlName="password" name="password">
+                </mat-form-field></td>
+             
+                <td><mat-form-field class="example-full-width">
+                  <mat-label>Mail</mat-label>
+                  <input matInput formControlName="mail" name="mail">
+                </mat-form-field>
+              </td></tr></div>
+
+            <div class="row mb-3">
+              <div class="col-md-6">
+                <tr><td><button mat-raised-button routerLink="/createChart()" type="submit" color="primary" (click)="postBMI()" class="btn btn-primary btn-block">Check BMI</button>
+                </td></tr>
+              </div>
+            </div>
+            </div>
+          </form>
+        </div>
+      </table></div>
+    </div>
+  </div>
+</div>
+</div>
+
+<!-- </app-dashboard> -->
+
+<!-- <div class="container">
+  <div class="chart-container">
+    <ngx-charts-radial-gauge
+      [view]="[150, 150]"
+      [results]="[{ value: bmiCalci.bmi, name: 'BMI' }]"
+      [min]="0"
+      [max]="50"
+      [showAxis]="true"
+      [angleSpan]="240"
+      [startAngle]="-120"
+    ></ngx-charts-radial-gauge>
+    <p class="bmi-category">{{ getBmiCategory(bmiCalci.bmi) }}</p>
+  </div>
+</div> -->
+
